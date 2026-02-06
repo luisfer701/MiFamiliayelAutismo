@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nuestra Historia, Un Camino con el Autismo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes de Google -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+     
+     <style>
+        :root{
+            --azul-principal:#1f3a5f;
+            --azul-secundario:#4d648d;
+            --gris-fonfo:#f5f7fa;
+            --gris-texto:#333;
+            --azul-acento:#a3c4dc;
+        }
+
+        body{
+            margin: 0;
+            font-family: 'Inter',sans-serif;
+            background-color: var(--gris-fondo);
+            color: var(--gris-texto);
+            line-height: 1.8;
+        }
+
+        header{
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-secundario));
+            color: white;
+            padding: 60px 20px;  /* para crear espacio interno entre el contenido de un elemento (texto, imagen) y su borde */
+            text-align: center;
+        }
+
+        header h1{
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p{
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        nav{
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky; /*dejar el menu de navegacion fijo en la parte superior de la pagina */
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a{
+            color: var(--azul-principal);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover{
+            color: var(--azul-secundario); /*para definir una sección de navegación, conteniendo enlaces principales a otras páginas o secciones internas */
+        }
+
+        main{
+            max-width: 900px; /*para definir y estructurar el contenido principal, único y dominante de una página web */
+            margin: 60px auto; 
+            padding: 0 20px;
+        }
+
+        section{
+            background-color: white;
+            padding: 50px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        h2{
+            font-family: 'Playfair Display', serif;
+            color: var(--azul-principal);
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        p{
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        footer{
+            background-color: var(--azul-principal);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+
+        .cita{
+            font-style: italic;
+            background-color: var(--azul-acento);
+            padding: 20px;
+            border-left: 5px solid var(--azul-principal);
+            margin: 30px 0;
+        }
+        
+        .imagen {
+            width: 350px;
+            height: 350px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            background: #eee;
+        }
+
+        .video-YT{
+            width: 560px;
+            height: 315px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+        
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Nuestra Historia</h1>
+        <p>Un camino de amor, aprendizaje y esperanza junto a un hijo con autismo</p>
+    </header>
+
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#MarcoRef">Qué es el autismo</a>
+        <a href="#Capitulo1">Capítulo 1</a>
+        <a href="#Capitulo2">Capítulo 2</a>
+        <a href="#Capitulo3">Capítulo 3</a>
+    </nav>
+
+    <main>
+        <section id="Inicio">
+        <h2>Inicio</h2>
+            <p>
+                Este espacio nace con el propósito de compartir nuestra experiencia como familia,
+                con la esperanza de acompañar a otros padres que recorren un camino similar.
+                Aquí contamos nuestra historia capítulo a capítulo, desde la honestidad,
+                el amor y el aprendizaje constante.
+            </p>
+        </section>
+
+        <section id="MarcoRef">
+            <h2>Qué es el autismo?</h2>
+                <p>
+                    El autismo, o <a href="https://www.who.int/es/news-room/fact-sheets/detail/autism-spectrum-disorders">Trastorno del Espectro Autista</a>
+                   (TEA), es una condición del neurodesarrollo que afecta la comunicación, 
+                   la interacción social y el comportamiento, caracterizada por patrones 
+                   repetitivos y/o intereses restringidos, y que se manifiesta de forma diferente 
+                   en cada persona, creando un "<strong><em>espectro</em></strong>" amplio de 
+                   desafíos y fortalezas, con necesidades de apoyo variables.
+                </p>
+                <br />
+                <div class="video-YT">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1VUAPWUA690?si=6KfxCU5GbKMOWavF"
+                    title="YouTube video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </section>
+
+        <section id="Capitulo1">
+            <h2> Capítulo 1: El inicio de nuestro camino</h2>
+            <p>
+                Hola, quiero hablar un poco de mi vida como padre de un niño con autismo.
+                Mi hijo tiene 6 años y desde el día de su nacimiento nuestra historia ha estado llena de desafíos.
+                Su parto fue muy difícil; ese día estuve a punto de perder a mi esposa y a mi hijo.
+                Fueron momentos de mucho miedo e incertidumbre, pero gracias a Dios ambos sobrevivieron.
+            </p>
+            <p>
+                Durante los primeros meses, todo parecía normal. Nuestro hijo crecía como cualquier
+                otro bebé y no notábamos nada fuera de lo común. Sin embargo, antes de que cumpliera
+                su primer año de vida, comenzamos a notar que algunos de sus comportamientos no eran
+                iguales a los de otros niños.
+            </p>
+
+            <div class="cita">
+                "Nuestro hijo no necisitaba padres perfectos, sino padres presentes."
+            </div>
+
+            <p>
+                Un momento que nunca olvidaré fue cuando una vecina nos visitó con su hijo, que tenía
+                la misma edad que el nuestro. Al verlos juntos, nos dimos cuenta de que el otro niño
+                tenía intereses distintos, ya pronunciaba algunas palabras y prestaba mucha atención
+                a las indicaciones de su madre. Nuestro hijo, en cambio, parecía estar en su propio mundo.
+                En ese instante, aunque no lo entendíamos del todo, algo dentro de nosotros nos dijo
+                que el camino no sería igual.
+            </p>
+            <p>
+                Durante mucho tiempo, especialmente mi esposa, se negó a aceptar que nuestro hijo
+                pudiera tener alguna condición. Cada vez que los médicos hacían alguna sugerencia
+                sobre su estado cognitivo o mencionaban la necesidad de iniciar un proceso de
+                diagnóstico, su malestar era evidente. Para ella, escuchar esas palabras era como
+                aceptar algo que aún no estaba preparada para enfrentar.
+            </p>
+            <p>
+                Esa situación nos llevó a tener muchas discusiones como pareja. Sin darnos cuenta,
+                estábamos luchando entre el miedo, la negación y el dolor, cuando en realidad lo
+                más importante debía ser darle prioridad a la atención oportuna de nuestro hijo.
+                Hoy entiendo que no se trataba de falta de amor, sino de no saber cómo manejar una
+                realidad tan difícil.
+            </p>
+            <p>
+                Cuando mi esposa comenzó a documentarse y a informarse sobre los comportamientos
+                de nuestro hijo, poco a poco empezó a aceptar que su condición era real. Entendió
+                que la negación no era a la persona que más daño le hacía a ella, sino a nuestro hijo.
+                Él necesitaba, lo antes posible, el acompañamiento profesional adecuado para poder
+                desarrollar una vida lo más normal posible dentro de su condición.      
+            </p>
+            <p>
+                Fue entonces cuando ella misma tomó la decisión de buscar ayuda. Empezó a contactar
+                a profesionales que pudieran analizar el caso de nuestro hijo, iniciar el proceso
+                de diagnóstico y determinar cuáles serían las terapias y los apoyos necesarios para
+                su desarrollo. Ese paso no fue fácil, pero fue un acto de amor, valentía y responsabilidad
+                como madre.
+            </p>
+
+            <div class="imagen">
+                <img src="file:///C:/Users/user/Desktop/Web-Austismo/imagen/ilustracion-mama.avif"
+                alt="Madre con un niño en brazos" width="350"/>
+            </div>
+
+        </section>
+
+        <section id="Capitulo2">
+            
+            <h2>Capítulo 2: Los avances, los desafios del día a día y cómo seguimos creciendo como familia.</h2>
+            
+            <p>
+                En una clínica de la ciudad, mi esposa y yo asistimos a una cita con un especialista
+                en neuropediatría. Durante la consulta, el doctor nos realizó una entrevista extensa
+                en la que indagó distintos aspectos de la vida de nuestro hijo: desde su nacimiento,
+                su forma de comportarse, hasta su proceso de desarrollo.
+            </p>
+
+            <p>
+                Después de escucharnos atentamente, nos indicó que era necesario realizar una evaluación
+                adicional con un neuropsicólogo pediatra, quien debía aplicar una serie de pruebas para
+                determinar el grado de su condición. El doctor fue claro al decirnos que todas las
+                situaciones que le habíamos expuesto eran determinantes para un diagnóstico de autismo.
+                Al mismo tiempo, elaboró varias órdenes de acompañamiento profesional en áreas como el
+                lenguaje, la terapia ocupacional, el comportamiento y la psicología.
+            </p>
+
+            <p>
+                Todo este proceso lo realizamos con el mayor amor del mundo, poniendo siempre las
+                necesidades de nuestro hijo por encima de las nuestras. Nuestra prioridad era que él
+                recibiera el acompañamiento profesional adecuado para que su desarrollo no se viera
+                interrumpido ni estancado.
+            </p>
+
+            <p>
+                En lo personal, este proceso me afectó profundamente. Me dolía ver la frustración de
+                mi esposa y, al mismo tiempo, pensar que vivimos en una sociedad donde cualquier
+                diferencia frente a lo que mal llamamos “normalidad” puede convertirse en una barrera
+                para el futuro de un niño. Aun así, decidí ser fuerte, porque entendí que nuestro
+                hijo no necesitaba padres perfectos, sino padres presentes y dispuestos a luchar por él.
+            </p>
+
+        </section>
+
+        <section id="Capitulo3">
+            <h2>Capítulo 3 (Próximamente)</h2>
+            <p>
+                Reflexione, apredizajes y un mensaje de inclusión y empatía.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 · Nuestra Historia · Testimonio de vida
+    </footer>
+        
+    
+</body>
+
+</html>
