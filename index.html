@@ -6,102 +6,115 @@
     <title>Nuestra Historia, Un Camino con el Autismo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fuentes de Google -->
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!--implementacion de favicon-->
 
     <!-- Icono de la pagina -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x.icon">
-    
-     <style>
-        :root{
-            --azul-principal:#1f3a5f;
-            --azul-secundario:#4d648d;
-            --gris-fonfo:#f5f7fa;
-            --gris-texto:#333;
-            --azul-acento:#a3c4dc;
+    <!--<link rel="shortcut icon" href="C:\Users\user\Desktop\Web-Austismo\favicon.ico" type="image/x-icon">-->
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\user\Desktop\Web-Austismo\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\user\Desktop\Web-Austismo\favicon-16x16.png">
+    <!--<link rel="icon" href="C:\Users\user\Desktop\Web-Austismo\favicon.ico" type="image/x.icon">-->
+
+
+    <style>
+        :root {
+            --azul-principal: #1f3a5f;
+            --azul-secundario: #4d648d;
+            --gris-fonfo: #f5f7fa;
+            --gris-texto: #333;
+            --azul-acento: #a3c4dc;
         }
 
-        body{
+        body {
             margin: 0;
-            font-family: 'Inter',sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: var(--gris-fondo);
             color: var(--gris-texto);
             line-height: 1.8;
         }
 
-        header{
+        header {
             /*background: linear-gradient(135deg, var(--azul-principal), var(--azul-secundario));*/
-            background-image: url("imagen/Bannerv1.jpg");
+            background-image: url("file:///C:/Users/user/Desktop/Web-Austismo/imagen/Bannerv1.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: white;
-            padding: 60px 20px;  /* para crear espacio interno entre el contenido de un elemento (texto, imagen) y su borde */
-            /*text-align: center;*/
+            padding: 50px 20px;
+            /* para crear espacio interno entre el contenido de un elemento (texto, imagen) y su borde */
+
         }
 
-        header h1{
+        header h1 {
             font-family: 'Playfair Display', serif;
             text-align: left;
             font-size: 3rem;
             margin-bottom: 10px;
         }
 
-        header p{
+        header h3 {
             font-size: 1.1rem;
             text-align: right;
             opacity: 0.9;
         }
 
-        nav{
+        nav {
             background-color: white;
-            padding: 15px;
+            padding: 5px;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            position: sticky; /*dejar el menu de navegacion fijo en la parte superior de la pagina */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            /*dejar el menu de navegacion fijo en la parte superior de la pagina */
             top: 0;
             z-index: 10;
         }
 
-        nav a{
+        nav a {
             color: var(--azul-principal);
             margin: 0 15px;
             text-decoration: none;
             font-weight: 500;
         }
 
-        nav a:hover{
-            color: var(--azul-secundario); /*para definir una sección de navegación, conteniendo enlaces principales a otras páginas o secciones internas */
+        nav a:hover {
+            color: var(--azul-secundario);
+            /*efecto de cambio de color al poner el puntero del mouse sobre la opcion del menu */
         }
 
-        main{
-            max-width: 900px; /*para definir y estructurar el contenido principal, único y dominante de una página web */
-            margin: 60px auto; 
+        main {
+            max-width: 900px;
+            /*para definir y estructurar el contenido principal, único y dominante de una página web */
+            margin: 20px auto;
             padding: 0 20px;
         }
 
-        section{
+        section {
             background-color: white;
-            padding: 15px;
+            padding: 20px;
+            margin-top: 0px;
             margin-bottom: 15px;
             border-radius: 8px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
         }
 
-        h2{
+        h2 {
             font-family: 'Playfair Display', serif;
             color: var(--azul-principal);
             font-size: 2rem;
-            margin-bottom: 25px;
+            margin-top: 1px;
+            margin-bottom: 10px;
         }
 
-        p{
+        p {
             margin-bottom: 20px;
             font-size: 1.05rem;
             text-align: justify;
         }
 
-        footer{
+        footer {
             background-color: var(--azul-principal);
             color: white;
             text-align: center;
@@ -109,33 +122,30 @@
             font-size: 0.9rem;
         }
 
-        .cita{
+        .cita {
             font-style: italic;
             background-color: var(--azul-acento);
             padding: 20px;
             border-left: 5px solid var(--azul-principal);
             margin: 30px 0;
         }
-        
-        .imagen {
-            width: 350px;
-            height: 350px;
+
+        img {
+            margin: auto;
+            display: block;
             border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-            background: #eee;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
         }
 
-        .video-YT{
+        iframe{
+            margin: auto;
+            display: block;
             width: 560px;
             height: 315px;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
         }
-        
-
-
     </style>
 
 </head>
@@ -144,7 +154,7 @@
 
     <header>
         <h1>Nuestra Historia</h1>
-        <p>Un camino de amor, aprendizaje y </br>esperanza junto a un hijo con autismo</p>
+        <h3>Un camino de amor, aprendizaje y </br>esperanza junto a un hijo con autismo</h3>
     </header>
 
     <nav>
@@ -157,7 +167,7 @@
 
     <main>
         <section id="Inicio">
-        <h2>Inicio</h2>
+            <h2>Inicio</h2>
             <p>
                 Este espacio nace con el propósito de compartir nuestra experiencia como familia,
                 con la esperanza de acompañar a otros padres que recorren un camino similar.
@@ -168,21 +178,23 @@
 
         <section id="MarcoRef">
             <h2>Qué es el autismo?</h2>
-                <p>
-                    El autismo, o <a href="https://www.who.int/es/news-room/fact-sheets/detail/autism-spectrum-disorders">Trastorno del Espectro Autista</a>
-                   (TEA), es una condición del neurodesarrollo que afecta la comunicación, 
-                   la interacción social y el comportamiento, caracterizada por patrones 
-                   repetitivos y/o intereses restringidos, y que se manifiesta de forma diferente 
-                   en cada persona, creando un "<strong><em>espectro</em></strong>" amplio de 
-                   desafíos y fortalezas, con necesidades de apoyo variables.
-                </p>
-                <br />
-                <div class="video-YT">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1VUAPWUA690?si=6KfxCU5GbKMOWavF"
+            <p>
+                El autismo, o <a
+                    href="https://www.who.int/es/news-room/fact-sheets/detail/autism-spectrum-disorders">Trastorno del
+                    Espectro Autista</a>
+                (TEA), es una condición del neurodesarrollo que afecta la comunicación,
+                la interacción social y el comportamiento, caracterizada por patrones
+                repetitivos y/o intereses restringidos, y que se manifiesta de forma diferente
+                en cada persona, creando un "<strong><em>espectro</em></strong>" amplio de
+                desafíos y fortalezas, con necesidades de apoyo variables.
+            </p>
+            <br />
+            
+                <iframe src="https://www.youtube.com/embed/1VUAPWUA690?si=6KfxCU5GbKMOWavF"
                     title="YouTube video" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            
         </section>
 
         <section id="Capitulo1">
@@ -229,9 +241,9 @@
             <p>
                 Cuando mi esposa comenzó a documentarse y a informarse sobre los comportamientos
                 de nuestro hijo, poco a poco empezó a aceptar que su condición era real. Entendió
-                que la negación no era a la persona que más daño le hacía a ella, sino a nuestro hijo.
+                que la negación no era a ella a la persona que más daño le hacia, sino a nuestro hijo.
                 Él necesitaba, lo antes posible, el acompañamiento profesional adecuado para poder
-                desarrollar una vida lo más normal posible dentro de su condición.      
+                desarrollar una vida lo más normal posible dentro de su condición.
             </p>
             <p>
                 Fue entonces cuando ella misma tomó la decisión de buscar ayuda. Empezó a contactar
@@ -241,18 +253,17 @@
                 como madre.
             </p>
 
-            <div class="imagen">
-                <img src="imagen/ilustracion-mama.avif"
-                alt="Madre con un niño en brazos" width="350"/>
-            </div>
-            <!--imagen/ilustracion-mama.avif-->
+
+            <img src="file:///C:/Users/user/Desktop/Web-Austismo/imagen/ilustracion-mama.avif"
+                alt="Madre con un niño en brazos" width="350" />
+
 
         </section>
 
         <section id="Capitulo2">
-            
+
             <h2>Capítulo 2: Los avances, los desafios del día a día y cómo seguimos creciendo como familia.</h2>
-            
+
             <p>
                 En una clínica de la ciudad, mi esposa y yo asistimos a una cita con un especialista
                 en neuropediatría. Durante la consulta, el doctor nos realizó una entrevista extensa
@@ -287,10 +298,122 @@
         </section>
 
         <section id="Capitulo3">
-            <h2>Capítulo 3 (Próximamente)</h2>
+            <h2>Capítulo 3: Cuando entendí que mi lugar estaba en casa</h2>
             <p>
-                Reflexione, apredizajes y un mensaje de inclusión y empatía.
+                Cuando los especialistas nos entregaron las recomendaciones para iniciar las terapias, 
+                sentí que entrábamos en una nueva etapa. Ya no era solo el diagnóstico; ahora comenzaba 
+                la acción. Lenguaje, terapia ocupacional, psicología, seguimiento constante. Todo era necesario. 
+                Todo era urgente.
             </p>
+            <p>
+                Pero detrás de esa organización médica había algo que al principio no vi con claridad: el peso real del proceso.
+            </p>
+            <p>
+                Mi esposa fue quien asumió la coordinación de todo. Llamadas interminables. Autorizaciones. 
+                Trámites administrativos. Cambios de horarios. Traslados constantes con los dos niños. Salas de espera. 
+                Citas varias veces por semana.
+            </p>
+            <p>
+                Yo estaba concentrado en mi trabajo. En mi mente, estaba cumpliendo mi rol: sostener económicamente el hogar, 
+                asegurar que nada faltara. Pensaba que esa era mi manera de apoyar. Y lo era… pero no era suficiente.
+            </p>
+            <p>
+                Mientras yo estaba enfocado en cumplir metas laborales, ella estaba emocional y físicamente agotada. 
+                Y lo más difícil no fue el cansancio, fue la soledad que empezó a sentir.
+            </br>
+            La frustración comenzó a notarse. No porque no amara lo que hacía, sino porque se sentía sola en la batalla. 
+            Cargando trámites, niños, diagnósticos y emociones sin el respaldo diario que necesitaba de mí.
+            </p>
+            <p>
+                Recuerdo el momento en que entendí que esto nos estaba sobrepasando como pareja. No fue una gran discusión. 
+                Fue algo más silencioso: verla agotada, verla frustrada, verla llorar en momentos en los que yo no había estado presente.
+            </p>
+            <p>
+                Ahí entendí algo que me confrontó profundamente como hombre.
+            </p>
+            <p>
+                Yo creía que estaba siendo responsable. Pero ser responsable no es solo proveer. Es estar.
+            </p>
+            <p>
+                Tuve que hacerme una pregunta incómoda:</br>
+                ¿Estoy usando el trabajo como refugio para no enfrentar lo que está pasando en casa?
+            </p>
+            <p>
+                Esa pregunta me golpeó fuerte.
+            </p>
+            <p>
+                Decidí entonces reorganizar mis prioridades. No fue sencillo. Implicó dejar compromisos laborales, 
+                ajustar mis deberes profesionales y, sobre todo, romper una idea muy arraigada en mí sobre lo que 
+                significa “ser un buen padre”.
+            </p>
+            <p>
+                Empecé a llevar a mi hijo a sus terapias ocupacionales y psicológicas. Me quedaba en casa con el 
+                menor cuando era necesario. Aprendí las rutinas, entendí los ejercicios, escuché a los terapeutas. Me involucré.
+            </p>
+            <p>
+                Y algo cambió.
+            </br>
+            </br>
+                No solo en mi hijo. En mí.
+            </br>
+        </br>
+                Comencé a ver de cerca sus avances. A celebrar cosas que antes no dimensionaba. Verlo aceptar cambios inesperados 
+                en la rutina. Notar cómo mejoraba su comunicación. Cómo empezaba a seguir indicaciones de otras personas. 
+                Cómo esperaba su turno. Cómo su deseo por asistir a las terapias crecía en lugar de disminuir.
+            </p>
+            <p>
+                Eso fue una lección enorme: cuando el acompañamiento es respetuoso y amoroso, el niño no lo vive como imposición, 
+                sino como oportunidad.
+            </p>
+            <p>
+                También llegó el jardín infantil. Confieso que tenía miedo. Miedo a la exclusión. A la incomprensión. A que la 
+                palabra “diferente” se transformara en barrera. Pero ocurrió lo contrario. <br>
+                La persona a cargo nos habló con conocimiento y experiencia. Nos dio esperanza real, no promesas vacías. 
+                Adaptaron un salón con pocos niños, con características similares, con una dinámica más tranquila y acompañamiento cercano.
+            </p>
+            <p>
+                Y vimos florecer a nuestro hijo.
+            </p>
+            <p>
+                Empezó a valerse por sí mismo en tareas cotidianas. Comer sin ayuda. Vestirse solo. Ir al baño sin apoyo. Mirar a las personas cuando le hablaban. Aceptar el contacto físico. Saludar.
+                Cada logro era una conquista.<br>
+                <br>
+                Recuerdo pensar: para muchos esto es normal. Para nosotros es un milagro cotidiano.
+            </p>
+            <p>
+                Y lo más hermoso fue notar que aquel hijo que un día necesitó el ejemplo de su hermano menor, ahora comenzaba a convertirse 
+                en ejemplo para él. La dinámica se equilibró. Ya no era solo quien recibía guía; ahora también la ofrecía.
+            </p>
+            <p>
+                Eso me enseñó algo más: el crecimiento no es lineal, pero es posible.
+            </p>
+            <p>
+                Las terapias de lenguaje y la escolarización transformaron nuestra comunicación. Ya no dependíamos únicamente de la intuición o de la rutina para entenderlo. 
+                Ahora podía expresar lo que quería, lo que sentía, lo que necesitaba.
+            </p>
+            <p>
+                Y cuando un hijo puede expresar su mundo interior, los padres respiramos diferente.
+            </p>
+            <p>
+                Hoy miro atrás y entiendo que ese momento en que decidí priorizar a mi familia no fue una renuncia. Fue una redefinición.
+            </p>
+            <p>
+                No dejé de ser proveedor. Me convertí en presencia.
+            </p>
+            <p>
+                No dejé de trabajar. Aprendí que el éxito no se mide solo en resultados laborales, sino en la capacidad de sostener a los que amas cuando más te necesitan.
+
+            </p>
+            <p>
+                Ser padre de un niño con autismo me obligó a madurar. A cuestionar mis ideas sobre fortaleza. 
+                A entender que la verdadera fuerza no está en resistir solo, sino en acompañar.
+            </p>
+            <p>
+                Y si algo tengo claro es esto:<br>
+                nuestro hijo no necesitaba un padre perfecto.<br>
+                Necesitaba un padre dispuesto a quedarse.
+            </p>
+
         </section>
 
     </main>
@@ -298,8 +421,8 @@
     <footer>
         © 2026 · Nuestra Historia · Testimonio de vida
     </footer>
-        
-    
+
+
 </body>
 
 </html>
