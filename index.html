@@ -146,6 +146,71 @@
             overflow: hidden;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
         }
+
+        /*ARTICULO*/
+
+        /* Estilo para el contenedor del artículo */
+        article {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-top: 6px solid var(--azul-principal); /* Detalle de color superior */
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto sutil al pasar el mouse si estás en un listado */
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para elementos dentro del article */
+        article h2 {
+            margin-top: 0;
+            border-bottom: 2px solid var(--gris-fonfo);
+            padding-bottom: 15px;
+        }
+
+        /* Clase para la fecha o autor dentro del artículo */
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--azul-secundario);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Ajuste para que las imágenes dentro del artículo no se corten */
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin: 25px auto;
+        }
+
+
+        /* Estilo para el footer específico dentro del artículo */
+        article footer {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8fafd; /* Un azul muy clarito para diferenciarlo */
+            border-radius: 8px;
+            border: 1px dashed var(--azul-acento); /* Borde punteado elegante */
+            color: var(--gris-texto); /* Texto oscuro para lectura fácil */
+            text-align: left; /* Alineación normal para lectura de cierre */
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* estilo especial para un botón o enlace de contacto en ese footer */
+        article footer p {
+            margin-bottom: 0; /* Quita el margen extra al último párrafo */
+            font-style: italic;
+        }
+    
+    
     </style>
 
 </head>
@@ -415,6 +480,66 @@
          <img src="imagen/Familia2.png" alt="Padre jugando con sus dos hijos en el suelo con varios juguetes" width="350" />
         </section>
 
+        <article>
+            <span class="article-meta">Guía para Familias | 6 de marzo de 2026</span>
+            <h2>Acompañando el Camino: Lo que todo padre debe saber sobre el autismo hoy</h2>
+    
+                <p>
+                    Recibir un diagnóstico de Trastorno del Espectro Autista (TEA) para un hijo es un momento que cambia la vida. 
+                    En este 2026, la visión ha evolucionado: ya no miramos el autismo como una "enfermedad que curar", sino como 
+                    una <strong>forma diferente de procesar el mundo</strong> que requiere comprensión, estructura y, sobre todo, 
+                    mucho amor.
+                </p>
+
+            <h3>1. El Poder de la Intervención Temprana</h3>
+                <p>
+                    La ciencia actual es clara: el cerebro de los niños tiene una plasticidad asombrosa. Detectar señales antes 
+                    de los 24 meses y comenzar terapias basadas en el juego y la comunicación funcional marca una diferencia abismal 
+                    en la autonomía futura. No esperes a que "se le pase"; si tu instinto te dice algo, busca un especialista.
+                </p>
+
+            <div class="cita">
+                "Tu hijo no es un diagnóstico. El diagnóstico es simplemente el mapa que te ayudará a entender cómo enseñarle a 
+                navegar en un mundo que no siempre habla su mismo idioma."
+            </div>
+
+            <h3>2. Cuidar al Cuidador: Tu bienestar importa</h3>
+                <p>
+                    Es común que como padres nos olvidemos de nosotros mismos. Sin embargo, para que tu hijo esté bien, tú necesitas 
+                    estarlo. El agotamiento crónico (burnout parental) es real. Busca redes de apoyo, asiste a grupos de padres y 
+                    recuerda que pedir ayuda no te hace menos capaz, te hace más fuerte.
+                </p>
+
+            <img src="imagen/Familia3.png" 
+            alt="Familia caminando unida por un sendero tropical al atardecer" width="300px"/>
+
+            <h3>3. Estrategias Prácticas para el Hogar</h3>
+                <p>
+                    En la actualidad, contamos con herramientas digitales y visuales que facilitan el día a día. Aquí tres pilares 
+                    básicos:
+                </p>
+            <ul>
+                <li><strong>Anticipación:</strong> Usa apoyos visuales para explicar qué pasará después. Esto reduce drásticamente 
+                    la ansiedad.</li>
+                <li><strong>Intereses Profundos:</strong> Si a tu hijo le fascinan los dinosaurios o los trenes, usa eso como puente 
+                    para enseñarle matemáticas o habilidades sociales.</li>
+                <li><strong>Ambientes Calmos:</strong> Crea un "rincón de la calma" en casa donde pueda regularse sensorialmente 
+                    cuando el mundo exterior se vuelva demasiado ruidoso.</li>
+            </ul>
+
+            <h3>Mirando hacia el futuro</h3>
+                <p>
+                    El camino no siempre es lineal, habrá días de grandes victorias y otros de desafíos profundos. Pero recuerda: 
+                    cada pequeño logro es un paso gigante. Hoy en 2026, la sociedad está más abierta a la neurodiversidad; sigamos 
+                    construyendo ese espacio donde tu hijo pueda ser simplemente él mismo.
+                </p>
+
+            <footer>
+                <p>¿Te ha servido este artículo? Comparte tu experiencia en los comentarios o contáctanos para más recursos.</p>
+            </footer>
+        </article>
+
+        
     </main>
 
     <footer>
@@ -426,6 +551,7 @@
 
 
 </html>
+
 
 
 
