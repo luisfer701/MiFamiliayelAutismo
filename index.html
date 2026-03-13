@@ -14,8 +14,8 @@
 
     <!-- Icono de la pagina -->
     <!--<link rel="shortcut icon" href="C:\Users\user\Desktop\Web-Austismo\favicon.ico" type="image/x-icon">-->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\user\Desktop\Web-Austismo\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\user\Desktop\Web-Austismo\favicon-16x16.png">
     <!--<link rel="icon" href="C:\Users\user\Desktop\Web-Austismo\favicon.ico" type="image/x.icon">-->
 
 
@@ -28,6 +28,10 @@
             --azul-acento: #a3c4dc;
         }
 
+        html {
+            scroll-behavior: smooth; /*la página se deslice suavemente en lugar de dar un salto brusco*/
+        }
+        
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
@@ -38,26 +42,26 @@
 
         header {
             /*background: linear-gradient(135deg, var(--azul-principal), var(--azul-secundario));*/
-            background-image: url("imagen/Banner.png");
+            background-image: url("file:///C:/Users/user/Desktop/Web-Austismo/imagen/Banner.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: white;
             padding: 50px 20px;
             /* para crear espacio interno entre el contenido de un elemento (texto, imagen) y su borde */
-
+            
         }
 
         header h1 {
             font-family: 'Playfair Display', serif;
             text-align: left;
             font-size: 3rem;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         header h3 {
             font-size: 1.1rem;
-            text-align: right;
+            text-align: left;
             opacity: 0.9;
         }
 
@@ -77,6 +81,7 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: 500;
+            
         }
 
         nav a:hover {
@@ -84,6 +89,7 @@
             /*efecto de cambio de color al poner el puntero del mouse sobre la opcion del menu */
         }
 
+        
         main {
             max-width: 900px;
             /*para definir y estructurar el contenido principal, único y dominante de una página web */
@@ -91,14 +97,44 @@
             padding: 0 20px;
         }
 
+
+/*SECCIONES*/
+
+        /* Selecciona todas las secciones que son pares (2, 4, 6...) */
+        main section:nth-of-type(even) {
+            background-color: #f9fbfc; /* Un tono casi blanco, pero distinto */
+            border-left: 4px solid var(--azul-acento); /* Un detalle sutil en el lateral */
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.02); /* Sombra interna para profundidad */
+        }
+
+        /* Ajuste de márgenes para que las secciones se sientan conectadas pero distintas */
         section {
+            margin-bottom: 0px; /* Eliminamos el margen inferior para que se toquen */
+            padding: 20px; /* Más aire interno para que el texto "respire" */
+            border-radius: 0; /* Quitamos bordes redondeados para un efecto de flujo continuo */
+        }
+
+        /* Redondea solo la primera y la última para suavizar el bloque principal */
+        section:first-of-type {
+            border-radius: 12px 12px 0 0;
+        }
+
+        section:last-of-type {
+            border-radius: 0 0 12px 12px;
+            margin-bottom: 20px;
+        }
+
+
+        /*section {
             background-color: white;
             padding: 20px;
             margin-top: 0px;
             margin-bottom: 15px;
             border-radius: 8px;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-        }
+        }*/
+
+
 
         h2 {
             font-family: 'Playfair Display', serif;
@@ -151,14 +187,15 @@
             unicode-bidi: bidi-override;
             direction: rtl;
         }
-        
-        /*ARTICULO*/
+
+
+/*ARTICULO*/
 
         /* Estilo para el contenedor del artículo */
         article {
             background-color: white;
             padding: 40px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             border-top: 6px solid var(--azul-principal); /* Detalle de color superior */
@@ -214,8 +251,88 @@
             margin-bottom: 0; /* Quita el margen extra al último párrafo */
             font-style: italic;
         }
-    
-    
+
+        .seccion-novedades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .tarjeta-novedad {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-top: 4px solid var(--azul-secundario);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .tarjeta-novedad h4 {
+            margin: 10px 0;
+            color: var(--azul-principal);
+        }
+
+
+/* FORMULARIO */
+
+/* Estilos para el Formulario de Contacto */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-input label {
+    font-weight: 500;
+    color: var(--azul-principal);
+    font-size: 0.95rem;
+}
+
+.grupo-input input, 
+.grupo-input textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-input input:focus, 
+.grupo-input textarea:focus {
+    outline: none;
+    border-color: var(--azul-secundario);
+    box-shadow: 0 0 5px rgba(77, 100, 141, 0.2);
+}
+
+.boton-enviar {
+    background-color: var(--azul-principal);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start; /* El botón no ocupa todo el ancho */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.boton-enviar:hover {
+    background-color: var(--azul-secundario);
+    transform: translateY(-2px);
+}
+
+
     </style>
 
 </head>
@@ -224,7 +341,8 @@
 
     <header>
         <h1>Nuestra Historia</h1>
-        <h3>Un camino de amor, aprendizaje y </br>esperanza junto a un hijo con autismo</h3>
+        
+        <h3>Un camino de amor, aprendizaje y <br>esperanza junto a un hijo con autismo</h3>
     </header>
 
     <nav>
@@ -233,9 +351,11 @@
         <a href="#Capitulo1">Capítulo 1</a>
         <a href="#Capitulo2">Capítulo 2</a>
         <a href="#Capitulo3">Capítulo 3</a>
+        <a href="#Contacto">Contacto</a>
     </nav>
 
     <main>
+
         <section id="Inicio">
             <h2>Inicio</h2>
             <p>
@@ -244,6 +364,22 @@
                 Aquí contamos nuestra historia capítulo a capítulo, desde la honestidad,
                 el amor y el aprendizaje constante.
             </p>
+        </section>
+
+        <section>
+            <h2>Lo más reciente</h2>
+            <div class="seccion-novedades">
+                <div class="tarjeta-novedad">
+                    <h4>Acompañando el camino</h4>
+                    <p>Lo que todo padre debe saber sobre el autismo hoy</p>
+                        <a href="#Articulo1">Leer más →</a>
+                </div>
+                <div class="tarjeta-novedad">
+                    <h4>Guía para Familias</h4>
+                    <p>Consejos prácticos para el día a día...</p>
+                    <a href="#Articulo2">Leer más →</a>
+                </div>
+            </div>
         </section>
 
         <section id="MarcoRef">
@@ -324,8 +460,8 @@
             </p>
 
 
-            <img src="imagen/Familia1.png"
-                alt="Madre con un niño en brazos en su habitacion" width="350" />
+            <img src="file:///C:/Users/user/Desktop/Web-Austismo/imagen/Familia1.png"
+                alt="Madre con un niño en brazos en su habitacion" width="350px"/>
 
 
         </section>
@@ -369,7 +505,6 @@
 
         <section id="Capitulo3">
             <h2>Capítulo 3: Cuando entendí que mi lugar estaba en casa</h2>
-   
             <p>
                 Cuando los especialistas nos entregaron las recomendaciones para iniciar las terapias, 
                 sentí que entrábamos en una nueva etapa. Ya no era solo el diagnóstico; ahora comenzaba 
@@ -482,10 +617,12 @@
                 nuestro hijo no necesitaba un padre perfecto, 
                 necesitaba un padre dispuesto a quedarse.
             </p>
-         <img src="imagen/Familia2.png" alt="Padre jugando con sus dos hijos en el suelo con varios juguetes" width="350" />
+                <img src="file:///C:/Users/user/Desktop/Web-Austismo/imagen/Familia2.png"
+                alt="Padre jugando con sus dos hijos en el suelo" width="350px"/>
         </section>
 
-        <article>
+        
+        <article id="Articulo1">
             <span class="article-meta">Guía para Familias | 6 de marzo de 2026</span>
             <h2>Acompañando el Camino: Lo que todo padre debe saber sobre el autismo hoy</h2>
     
@@ -515,7 +652,7 @@
                     recuerda que pedir ayuda no te hace menos capaz, te hace más fuerte.
                 </p>
 
-            <img src="imagen/Familia3.png" 
+            <img src="file:///C:/Users/user/Desktop/Web-Austismo/imagen/Familia3.png" 
             alt="Familia caminando unida por un sendero tropical al atardecer" width="300px"/>
 
             <h3>3. Estrategias Prácticas para el Hogar</h3>
@@ -544,9 +681,33 @@
                     <span class="email-invertido">moc.liamg@107razaclabl</span>
                 </p>
             </footer>
-        </article>
+        </article>   
 
-        
+        <section id="Contacto">
+            <h2>Contacta con nosotros</h2>
+            <p>Si quieres compartir tu historia, tienes alguna duda o simplemente necesitas ser escuchado, escríbenos. Estamos aquí para acompañarte.</p>
+    
+            <form form
+  action="https://formspree.io/f/xzdjvbzr"
+  method="POST" class="formulario-contacto">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensaje">Tu mensaje o historia</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -556,14 +717,4 @@
 
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
